@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <title>Housemate Lamp — a small study in listening</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Housemate Lamp home"><span class="wordmark-mark">✳</span> HOUSEMATE LAMP</a>
+    <span class="edition">A STUDY IN LISTENING <i></i> PROTOTYPE 01</span>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow">AN EVERYDAY OBJECT, WITH ROOM TO RESPOND</p>
+      <h1>Some things aren't<br><em>instructions.</em></h1>
+      <p class="lede">A lamp can do more than follow directions. Tell it a little about your day, and see how it might answer without asking you to choose a setting.</p>
+    </section>
+
+    <section class="experience" aria-label="Interactive lamp prototype">
+      <div class="room" id="room">
+        <div class="room-caption"><span class="live-dot"></span><span id="mood-label">HERE WITH YOU</span><span class="caption-rule"></span><span>YOUR SHARED ROOM</span></div>
+        <div class="window"><div class="moon"></div><div class="window-glow"></div><div class="window-line line-a"></div><div class="window-line line-b"></div></div>
+        <div class="plant plant-one"><i></i><i></i><i></i><b></b></div>
+        <div class="shelf"></div>
+        <div class="lamp-wrap" id="lamp-wrap" aria-label="Lamp glowing warmly">
+          <div class="lamp-glow" id="lamp-glow"></div>
+          <div class="lamp-shade"></div><div class="lamp-neck"></div><div class="lamp-base"></div>
+        </div>
+        <div class="table"></div>
+        <div class="room-shadow"></div>
+        <div class="room-note" id="room-note">A little warmth, just as you are.</div>
+      </div>
+
+      <div class="conversation">
+        <div class="conversation-head"><div><p class="eyebrow">A MOMENT BETWEEN HOUSEMATES</p><h2>What would you say?</h2></div><span class="turn-count" id="turn-count">01 <small>/ 05</small></span></div>
+        <div class="transcript" id="transcript" aria-live="polite">
+          <div class="lamp-message"><span class="message-icon">✳</span><p>I'm here. You don't have to ask me for anything.</p></div>
+        </div>
+        <form id="utterance-form" class="composer">
+          <label class="sr-only" for="utterance">Say something to the lamp</label>
+          <input id="utterance" name="utterance" maxlength="160" autocomplete="off" placeholder="Type something you'd tell a housemate…">
+          <button type="submit" aria-label="Send to lamp">↗</button>
+        </form>
+        <div class="prompt-area"><span class="prompt-label">OR BEGIN WITH</span>
+          <div class="prompts">
+            <button class="prompt" type="button" data-text="I had a rough day.">“I had a rough day.”</button>
+            <button class="prompt" type="button" data-text="I'm home.">“I'm home.”</button>
+            <button class="prompt" type="button" data-text="Leave me alone tonight.">“Leave me alone tonight.”</button>
+            <button class="prompt" type="button" data-text="You were too bright yesterday.">“You were too bright yesterday.”</button>
+          </div>
+        </div>
+        <button class="reset" id="reset" type="button">↺ &nbsp;Start over</button>
+      </div>
+    </section>
+
+    <section class="principle"><span class="principle-mark">“</span><p>The lamp doesn't solve your day.<br><em>It makes a little room for it.</em></p><span class="principle-note">A PROTOTYPE ABOUT PRESENCE,<br>NOT PRODUCTIVITY.</span></section>
+  </main>
+  <footer><span>RESEARCH THROUGH DESIGN · WEEK 7</span><span>AN EXPLORATION BY TEAM 7</span></footer>
+</body>
+</html>
